@@ -1,0 +1,3 @@
+SHELL=/bin/bash
+BASH_ENV=/root/project_env.env
+*/5 * * * * /usr/local/bin/php -f /var/www/html/index.php 2>&1 >> /var/log/cron.log 2>&1

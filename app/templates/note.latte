@@ -1,0 +1,15 @@
+    <ul>
+        <li>
+            <strong>Upravil(a):</strong> {$mail->get(MailDto::FIELD_CHANGE_AUTHOR)} / Dne: {$mail->getMailData()->date|date:'j.n.Y H:i'}
+        </li>
+
+        {if $mail->fieldExists(MailDto::FIELD_ATTACHMENT)}
+            {var $att = $mail->get(MailDto::FIELD_ATTACHMENT);}
+            <li>
+                <strong>Příloha:</strong>
+                <a href="{$att['url']}">{$att['text']}</a>
+            </li>
+        {/if}
+
+    </ul>
+    {$mail->get('comment') ?? $mail->get('notes')|noescape}

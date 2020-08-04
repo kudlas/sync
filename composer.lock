@@ -1,0 +1,389 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9185a364a10de88ebdb5faebd1273d00",
+    "packages": [
+        {
+            "name": "dibi/dibi",
+            "version": "v4.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/dibi.git",
+                "reference": "ed2a82741993706c15dbd4f5b8dd7eb5b75f7aa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/dibi/zipball/ed2a82741993706c15dbd4f5b8dd7eb5b75f7aa2",
+                "reference": "ed2a82741993706c15dbd4f5b8dd7eb5b75f7aa2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "replace": {
+                "dg/dibi": "*"
+            },
+            "require-dev": {
+                "nette/tester": "~2.0",
+                "phpstan/phpstan": "^0.12",
+                "tracy/tracy": "~2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                }
+            ],
+            "description": "Dibi is Database Abstraction Library for PHP",
+            "homepage": "https://dibiphp.com",
+            "keywords": [
+                "access",
+                "database",
+                "dbal",
+                "mssql",
+                "mysql",
+                "odbc",
+                "oracle",
+                "pdo",
+                "postgresql",
+                "sqlite",
+                "sqlsrv"
+            ],
+            "time": "2020-03-26T03:10:39+00:00"
+        },
+        {
+            "name": "kbsali/redmine-api",
+            "version": "v1.5.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kbsali/php-redmine-api.git",
+                "reference": "e75295b81e5dc4c858007d8924408e11e49e080c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kbsali/php-redmine-api/zipball/e75295b81e5dc4c858007d8924408e11e49e080c",
+                "reference": "e75295b81e5dc4c858007d8924408e11e49e080c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-simplexml": "*",
+                "php": "^5.4 || ^7.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpunit/phpunit": "^4.8.36 || ^5.4.8 || ^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Redmine\\": "src/Redmine/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Saliou",
+                    "email": "kevin@saliou.name",
+                    "homepage": "http://kevin.saliou.name"
+                }
+            ],
+            "description": "Redmine API client",
+            "homepage": "https://github.com/kbsali/php-redmine-api",
+            "keywords": [
+                "api",
+                "redmine"
+            ],
+            "time": "2019-03-15T17:37:16+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.25.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fa82921994db851a8becaf3787a9e73c5976b6f1",
+                "reference": "fa82921994db851a8becaf3787a9e73c5976b6f1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2019-12-20T14:15:16+00:00"
+        },
+        {
+            "name": "nette/utils",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "2c17d16d8887579ae1c0898ff94a3668997fd3eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/2c17d16d8887579ae1c0898ff94a3668997fd3eb",
+                "reference": "2c17d16d8887579ae1c0898ff94a3668997fd3eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "nette/tester": "~2.0",
+                "phpstan/phpstan": "^0.12",
+                "tracy/tracy": "^2.3"
+            },
+            "suggest": {
+                "ext-gd": "to use Image",
+                "ext-iconv": "to use Strings::webalize() and toAscii()",
+                "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+                "ext-json": "to use Nette\\Utils\\Json",
+                "ext-mbstring": "to use Strings::lower() etc...",
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()",
+                "ext-xml": "to use Strings::length() etc. when mbstring is not available"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🛠 Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "array",
+                "core",
+                "datetime",
+                "images",
+                "json",
+                "nette",
+                "paginator",
+                "password",
+                "slugify",
+                "string",
+                "unicode",
+                "utf-8",
+                "utility",
+                "validation"
+            ],
+            "time": "2020-02-09T14:10:55+00:00"
+        },
+        {
+            "name": "php-imap/php-imap",
+            "version": "3.0.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barbushin/php-imap.git",
+                "reference": "3ac294a7f852bd85bef04642ada78eb75be6e477"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barbushin/php-imap/zipball/3ac294a7f852bd85bef04642ada78eb75be6e477",
+                "reference": "3ac294a7f852bd85bef04642ada78eb75be6e477",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "ext-imap": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpImap\\": "src/PhpImap"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Barbushin",
+                    "email": "barbushin@gmail.com",
+                    "homepage": "http://linkedin.com/in/barbushin"
+                }
+            ],
+            "description": "Manage mailboxes, filter/get/delete emails in PHP (supports IMAP/POP3/NNTP)",
+            "homepage": "https://github.com/barbushin/php-imap",
+            "keywords": [
+                "imap",
+                "mail",
+                "mailbox",
+                "php",
+                "pop3",
+                "receive emails"
+            ],
+            "time": "2019-11-30T13:08:13+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2020-03-23T09:12:05+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

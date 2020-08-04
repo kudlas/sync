@@ -1,0 +1,9 @@
+vendor
+/.idea/*
+/app/log/
+/.idea/
+/log/
+/temp/
+.env
+.env_prod
+.env_test

@@ -1,0 +1,17 @@
+version: '2'
+services:
+  website:
+    hostname: rs.local
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: rs2
+    env_file:
+      - .env
+    volumes:
+      - ./:/var/www/html/
+    environment:
+      - APACHE_DOC_ROOT=/var/www/html
+    ports:
+      - 3066:80
+
