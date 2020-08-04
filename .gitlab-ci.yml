@@ -1,7 +1,7 @@
-image: git.siteone.cz:4567/docker/alpine-docker-git:v0.3.2
+image: ---
 
 variables:
-  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_HOST: ---
   DOCKER_DRIVER: overlay2
   NODE_ENV: production
 
@@ -12,7 +12,7 @@ before_script:
   - chmod 700 ~/.ssh
   - touch ~/.ssh/known_hosts
   - chmod 644 ~/.ssh/known_hosts
-  - ssh-keyscan git.siteone.cz > ~/.ssh/known_hosts
+  - ssh-keyscan --- > ~/.ssh/known_hosts
   - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
   - echo "$SSH_KEY" | tr -d '\r' > ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
@@ -24,7 +24,7 @@ deploy:
   stage: deploy
   script:
     - echo $SSH_KEY | tr -d '\r'
-    - ssh -v -i ~/.ssh/id_rsa deploy@192.168.2.142 "cd /srv/rs2 && git checkout master && git pull origin master && docker-compose up -d && exit"
+    - ssh -v -i ~/.ssh/id_rsa deploy@---- "cd /srv/rs2 && git checkout master && git pull origin master && docker-compose up -d && exit"
   when: manual
   only:
     - master
